@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Today I Learned
+description: Things Today I Learned
 modified: 2015-07-12
 tags: [ruby, geek, learning, share]
 image:
