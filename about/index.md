@@ -2,7 +2,7 @@
 layout: page
 title: About me
 image:
-  feature: abstract-8.jpg
+  feature: cool_cat.jpg
 comments: false
 modified: 2015-07-12
 ---
