@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Block Parameters special behaviour
-description: Ruby curiosity - Block parameters behave differnetly from non-parameter variables
+description: Ruby curiosity - Block parameters behave differently from non-parameter variables
 modified: 2015-07-12
 tags: [block, ruby, rails]
 image:

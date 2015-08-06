@@ -8,18 +8,17 @@ comments: true
 ---
 You probably had heard about `instance_eval` which evaluates a block in the context of an object:
 
-
-{% gist mayra-cabrera/ff5daae60b483d3bd8b %}
+{% gist mayra-cabrera/4ff5daae60b483d3bd8b %}
 
 The block is evaluated with the receiver as self, so it can access the receiver’s private methods and instance variables, such as @a. Well 
-`instance_eval` has a slightly more flexible twin brother named `instance_exec` that allows us to pass arguments to the block. See the following example:
+`instance_eval` has a slightly more flexible twin brother named `instance_exec` that allows us to pass arguments to the block:
 
 
 {% gist mayra-cabrera/47fe62080edd477a5d13 %}
 
     
 
-What do you think is going to print `weird_behaviour`? You might think that the block in B#weird_behaviour can access both the `@b` instance variable from `A`class and the `@c`instance variable from B, but nope :(. 
+What do you think is going to print `weird_behaviour`? You might think that the block in `B#weird_behaviour` can access both the `@b` instance variable from `A`class and the `@c`instance variable from B, but nope :(. 
 
     B.new.weird_behaviour # => "@b: 1, @c: "
 
