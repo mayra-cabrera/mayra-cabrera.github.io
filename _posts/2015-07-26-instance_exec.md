@@ -3,7 +3,7 @@ layout: post
 title: Instance exec - The forgotten twin brother of instance_eval
 description: Instance eval and another way to mix code
 modified: 2015-07-26
-tags: [blocks, ruby, instance_eva
+tags: [blocks, ruby, instance_eval]
 comments: true
 ---
 You probably had heard about `instance_eval` which evaluates a block in the context of an object:
