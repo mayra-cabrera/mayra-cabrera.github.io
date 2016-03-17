@@ -1,4 +1,12 @@
-# Stricter conversions with integer and float
+---
+layout: post
+title: Stricter conversions with integer and float
+description: Stricter conversions with integer and float
+modified: 2016-03-16
+tags: [ruby]
+comments: true
+---
+
 
 *This is based on The Well Grounded Rubyiest book, you should definitly buy it*
 
@@ -43,5 +51,3 @@ ArgumentError: invalid value for Float(): "-3xyz"
 ```
 
 So if you want to be strict about what gets converted and what gets rejected, `Integer` and `Float` can help you on :)
-
-:

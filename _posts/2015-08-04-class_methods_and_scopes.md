@@ -26,7 +26,6 @@ If we used them together `Cab.by_driver("Mayra").modern`, the following query wi
 
     SELECT "cabs".* FROM "cabs" WHERE "cabs"."driver" = 'Mayra' AND (aged > '...')
 
-
 Everything works as aspected right? Lets keep working and see what would happen if we continue to use class methods. Imagine that we use the former class methods in a controller, using `params`to set the driver name, and somehow a `nil` value is passed: 
  
 
@@ -77,10 +76,3 @@ Even if is working now, **all this could have actually been easily resolved with
 {% gist mayra-cabrera/adb9a7876ff174d91281 %}
 
 Because scopes always return a chainable object ;) 
-
-
-
-
-
-
-
