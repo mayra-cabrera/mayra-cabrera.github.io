@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modules and Lookup path
-description: Ruby ancestors chain
+description: Modules ancestors chain
 modified: 2016-17-03
 tags: [Ruby, Rails]
 comments: true
