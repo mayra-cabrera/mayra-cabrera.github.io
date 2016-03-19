@@ -7,7 +7,7 @@ tags: [Ruby, Rails]
 comments: true
 ---
 
-*This is based on The Well Grounded Rubyiest book, you should definitly buy it*
+*This is based on [The Well Grounded Rubyist](https://www.manning.com/books/the-well-grounded-rubyist) book, you should definitly buy it*
 
 When you include a module in a class (or even in another module), Ruby inserts the module in the ancestors chain, right above the including class itself:
 
