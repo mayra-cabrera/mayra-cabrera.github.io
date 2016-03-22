@@ -6,6 +6,7 @@ tags: [Ruby, Rails]
 comments: true
 ---
 
+*This is based on [The Well Grounded Rubyist](https://www.manning.com/books/the-well-grounded-rubyist) book, you should definitly buy it*
 
 Ruby doesn’t draw a clear line as compiled languages do between “compile time” and “runtime”, but the interpreter does parse your code before running it and certain decisions are made during that process. An important one is the recognition and allocation of local variables.
 
