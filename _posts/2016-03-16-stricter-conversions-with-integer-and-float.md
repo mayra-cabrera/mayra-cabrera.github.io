@@ -8,7 +8,7 @@ comments: true
 ---
 
 
-*This is based on [The Well Grounded Rubyist](https://www.manning.com/books/the-well-grounded-rubyist) book, you should definitly buy it*
+*This is based on [The Well Grounded Rubyist](https://www.manning.com/books/the-well-grounded-rubyist) book, you should definitely buy it*
 
 As a ruby programmer you probably have experimented with converting strings to integers: 
 
