@@ -1,61 +1,88 @@
-title:            Mayra Cabrera's Blog
-description:      Mostly programming and geeky stuff.
-disqus_shortname: mayerson
-reading_time:     true
-words_per_minute: 200
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
-# When testing locally leave blank or use http://localhost:4000
-url:
+# User Settings | Edit there as per required
 
-# Owner/author information
-owner:
-  name: Mayra Cabrera
-  avatar: grumpy.jpg
-  bio: "Developer, geek and crazy cat lady"
-  email: mcabrera1087@gmail.com
-  github: mayra-cabrera 
-  twitter: may-cabrera
-  linkedin: mayra-cabrera
+title: Mayra Cabrera's Blog
+url: "http://mayra-cabrera.github.io"
+baseurl: #"/"
 
-# Background image to be tiled on all pages
-background: 
+# This will show up at the top of index page
+site_heading: >
+    Mayra<span class="faded">'s blog</span>
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+email: mcabrera1087@gmail.com
+author: Mayra Cabrera
+# This description will show up in google search results
+# (for index page) etc.
+description: >
+    I like programming and cats
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-highlighter: rouge
-markdown:    kramdown
-gems:
-  - jekyll-sitemap
-sass:
-  sass_dir: _sass
-  style: compressed
+# This will what will show against &copy; in the footer
+copyright: mayerson
+# Toggle your short bio, which will displayed on your index page
+# Just toggle it and run jekyll again to see
+intro: false # Tip: Remove the span from site_heading if intro is set to true
+# This will be displayed in your intro
+short_bio: #
+permalink: /:title.html
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+# Comments are powered by disqus
+comments: true
 
-# Amount of post to show on home page
+# keep about_stub roughly 12 words long for best results
+# This will show up at the bottom of each post
+# Note that about_footer should be true if you want
+# to see author information at the bottom of each post
+about_stub: >
+    I like programming and cats
+
+about_footer: true
+
+twitter_username: may-cabrera
+github_username: mayra-cabrera
+linkedin_id: mayra-cabrera-2b944a80
+facebook_id: #yourusername
+
+favicon: true
+favicon_location: "images/favicon.ico"
+
+profile_picture: images/may_cabrera.jpg
 paginate: 5
+paginate_path: "/page/:num"
+#tracking_id: UA-69243698-7 # GA Tracking ID
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+# Social Stuff | open graph and twitter cards
+#og_image: "images/accent.png" # This will show in facebook thumbnails
+twitter_image: "https://pbs.twimg.com/profile_images/673653235920408576/PDRYrchH.jpg" # This will show in twitter cards
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+####################################
+####################################
+####################################
+### Build Settings | Don't Touch ###
+####################################
+####################################
+####################################
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "vendor"]
+markdown: kramdown
+
+gems:
+    - jekyll-paginate
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+# Scopes
+defaults:
+    -
+        scope:
+            path:   ""
+            type:   "pages"
+        values:
+            layout: "page"
+    -
+        scope:
+            path:   ""
+            type:   "posts"
+        values:
+            layout: "post"
+
+exclude: [vendor] # For travis ci
