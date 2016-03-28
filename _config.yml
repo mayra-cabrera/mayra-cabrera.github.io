@@ -36,7 +36,7 @@ about_stub: >
 
 about_footer: true
 
-twitter_username: may-cabrera
+twitter_username: may_cabrera
 github_username: mayra-cabrera
 linkedin_id: mayra-cabrera-2b944a80
 facebook_id: #yourusername
@@ -45,7 +45,7 @@ favicon: true
 favicon_location: "images/favicon.ico"
 
 profile_picture: images/may_cabrera.jpg
-paginate: 5
+paginate: 10
 paginate_path: "/page/:num"
 #tracking_id: UA-69243698-7 # GA Tracking ID
 
