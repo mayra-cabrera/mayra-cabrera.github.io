@@ -1,4 +1,3 @@
-holi
 {{page.id}}
 In Ruby, blocks have direct access to variables that already exist. However, block parameters (the variable names between the pipes) behave differently from non-parameter variables. If you have a variable of a given name in scope and also use that name as one of your block parameters, **then the two variables are not the same as each other**.
 
