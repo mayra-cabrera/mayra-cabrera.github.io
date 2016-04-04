@@ -35,11 +35,11 @@ package main
 import "fmt"
 
 func main() {
-    c := make(chan int, 2)
-    c <- 1
-    c <- 2
-    fmt.Println(<-c)
-    fmt.Println(<-c)
+  c := make(chan int, 2)
+  c <- 1
+  c <- 2
+  fmt.Println(<-c)
+  fmt.Println(<-c)
 }
 {% endhighlight %}
 
@@ -51,13 +51,13 @@ package main
 import "fmt"
 
 func main() {
-	c := make(chan int, 2)
-	c <- 1
-	c <- 2
-	c <- 3 // #somepeoplewanttowatchtheworldburn
-	fmt.Println(<-c)
-	fmt.Println(<-c)
-	fmt.Println(<-c)
+  c := make(chan int, 2)
+  c <- 1
+  c <- 2
+  c <- 3 // #somepeoplewanttowatchtheworldburn
+  fmt.Println(<-c)
+  fmt.Println(<-c)
+  fmt.Println(<-c)
 }
 {% endhighlight %}
 
@@ -75,18 +75,19 @@ package main
 import "fmt"
 
 func main() {
-	c := make(chan int, 2)
-	c <- 1
-	c <- 2
-	c3 := func() { c <- 3 }
-	go c3()
-	fmt.Println(<-c)
+  c := make(chan int, 2)
+  c <- 1
+  c <- 2
+  c3 := func() { c <- 3 }
+  go c3()
+  fmt.Println(<-c)
   fmt.Println(<-c)
   fmt.Println(<-c)
 }
 {% endhighlight %}
 
 The reason why the previous code doesn't fail is that we are adding an extra value from inside a go routine, so the following is happening:
+
 - Our code doesn't block the main thread
 - The goroutine is being called before the channel is emptied, but that's ok, since the go routine will wait until the channel is available
 - When first value is read from the channel, a spot is released and our goroutine can push its value to the channel :smiley_cat: 
