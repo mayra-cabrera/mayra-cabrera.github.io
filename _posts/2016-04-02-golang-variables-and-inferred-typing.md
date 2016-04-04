@@ -7,7 +7,7 @@ var(
   age int
   location string
 )
-{% end %}
+{% endhighlight %}
 
 Or even
 
@@ -16,7 +16,7 @@ var(
   name, location string
   age int
 )
-{% end %}
+{% endhighlight %}
 
 Variables can also be declared one by one
 
@@ -24,27 +24,27 @@ Variables can also be declared one by one
 var name string
 var age int
 var location string
-{% end %}
+{% endhighlight %}
 
 A var declaration can include initializers, one per variable
 
 {% highlight golang %}
 var(
   name string = "Mayra"
-	age int = 27
-	location string = "MTY"
+  age int = 27
+  location string = "MTY"
 )
-{% end %}
+{% endhighlight %}
 
 If an initializer is present the type can be omitted, the variable will take the type of the initializer (*inferred typing*)
 
 {% highlight golang %}
 var(
-	name = "Mayra"
-	age = 27
-	location = "MTY"
+  name = "Mayra"
+  age = 27
+  location = "MTY"
 )
-{% end %}
+{% endhighlight %}
 
 You can also initialize variables on the same line:
 
@@ -52,14 +52,14 @@ You can also initialize variables on the same line:
 var(
   name, location, age = "Mayra", 27, "MTY"
 )
-{% end %}
+{% endhighlight %}
 
 Inside a function, the `:=` short assignment statement can be used in place of var declaration with implicit type
 
 {% highlight golang %}
 func main(){
-	name, location := "Mayra", "MTY"
-	age := 32
-	fmt.Printf("%s (%d) of %s", name, age, location)
-{% end %}
+  name, location := "Mayra", "MTY"
+  age := 32
+  fmt.Printf("%s (%d) of %s", name, age, location)
+{% endhighlight %}
 
