@@ -1,12 +1,12 @@
 ## Concurrency
 
-*In Go only one routine has access to the value at any given time*, so data races cannot ocur, by design.
+*In Go only one routine has access to the value at any given time*, so data races cannot occur by design.
 
 Concurrent programming in many environments is made difficult by the subtleties required to implement correct access to shared variables. Go encourauges a different approach in which shared values are passed around on channels and infact, never actively shared by separate threads of execution. 
 
-Let see Go Routines and Channels in depth. 
+Let see Go Routines and Channels in depth:
 
-A Go Routine is a lightweight thread managed by the Go rontime. Go routines run in the same address space, so access to shared memory must be synchronized.
+A Go Routine is a lightweight thread that share the same address space with many others go routines, so access to shared memory must be synchronized.
 
 A Channel is a typed conduit through which you can send and receive values with the channel operator `<-`
 
@@ -17,7 +17,7 @@ v := <-ch  // Receive from ch, and assign value to v.
 
 As you can tell the data flows in the direction of the arrow. Please note that channels must be created before use.
 
-By default, sends and receives block wait until the other side is ready. This allow goroutines by synchronize without explicit locks or conditions variables.
+By default, sends and receives block wait until the other side is ready. This allow goroutines be synchronize without explicit locks or conditions variables.
 
 Also channels can be buffered. 
 
