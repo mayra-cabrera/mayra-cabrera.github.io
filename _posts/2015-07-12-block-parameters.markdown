@@ -25,7 +25,7 @@ The output from a call to this method is
     Reassigned to x in block; it's now 13
     Outer x is still 100
 {% endhighlight %}
-The x inside the block isn’t the same as the x outside the block, because x is used as a block parameter. Even reassigning to x inside the block doesn’t overwrite the “outer” x. This behavior enables you to use any variable name you want for your block parameters without having to worry about whether a variable of the same name is already in scope.
+The x inside the block isn’t the same as the `x` outside the block, because `x`  is used as a block parameter. Even reassigning to `x` inside the block doesn’t overwrite the “outer” `x`. This behavior enables you to use any variable name you want for your block parameters without having to worry about whether a variable of the same name is already in scope.
 
 ### Ruby special notation 
 
@@ -43,8 +43,8 @@ end
 {% endhighlight %}
 
 
-The semicolon, followed by x, indicates that the block needs its own x, **unrelated to any x that may have been created already in the scope outside the block**. In the example, we assign to x inside the block, but these assignments don’t affect the x that
-existed already. The output shows that the original x survives:
+The semicolon, followed by `x`, indicates that the block needs its own `x`, **unrelated to any x that may have been created already in the scope outside the block**. In the example, we assign to x inside the block, but these assignments don’t affect the `x` that
+existed already. The output shows that the original `x` survives:
 
 {% highlight ruby %}
     x in the block is now 0
