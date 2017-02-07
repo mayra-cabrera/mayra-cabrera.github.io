@@ -1,8 +1,8 @@
 # mayra-cabrera.github.io 
 
-Hello I'm Mayra,
-I like programming and cats. 
-And my favorite emojis are:
+Hello I'm Mayra, and this is my personal blog.. sort of... 
+
+I like programming and cats, and my favorite emojis are:
 
 :cat: :bowtie: :ok_woman: :shipit:
 
